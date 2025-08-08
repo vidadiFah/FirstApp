@@ -12,20 +12,21 @@
         android:layout_width="400dp"
         android:layout_height="400dp"
         android:src="@drawable/white_gradient_circle"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/ic_bird"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="400dp"/>
+        android:layout_marginBottom="-200dp"/>
 
 
     <ImageView
+        android:id="@+id/green_circle_big"
         android:layout_width="1200dp"
         android:layout_height="1200dp"
         android:src="@drawable/green_circle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="520dp" />
+        app:layout_constraintTop_toTopOf="@id/ic_bird"
+        android:layout_marginTop="40dp" />
 
     <TextView
         android:id="@+id/text_view"
@@ -35,11 +36,10 @@
         android:textColor="@color/white"
         android:textSize="40sp"
         android:textStyle="bold"
-        android:layout_marginTop="500dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ic_bird"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
     
     <Button
         android:id="@+id/next_button"
@@ -51,11 +51,10 @@
         android:backgroundTint="@color/white"
         android:width="370dp"
         android:height="65dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/down_text_field"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="40dp"/>
+        android:layout_marginTop="20dp"/>
 
     <ImageView
         android:id="@+id/green_circle_small"
@@ -120,10 +119,10 @@
         android:layout_width="370dp"
         android:layout_height="66dp"
         android:src="@drawable/text_field"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/up_text_field"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="150dp"/>
+        android:layout_marginTop="4dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -141,10 +140,10 @@
         android:layout_width="370dp"
         android:layout_height="66dp"
         android:src="@drawable/down_text_field"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/middle_text_field"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="220dp"/>
+        android:layout_marginTop="4dp"/>
 
     <TextView
         android:layout_width="wrap_content"

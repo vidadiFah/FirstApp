@@ -17,7 +17,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginBottom="-200dp"/>
 
-
     <ImageView
         android:id="@+id/green_circle_big"
         android:layout_width="1200dp"
@@ -69,15 +68,15 @@
 
     <TextView
         android:id="@+id/register_text"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="REGISTER"
-    android:textColor="@color/white"
-    android:textSize="18sp"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    android:layout_marginTop="10dp"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
 
     <ImageView
         android:id="@+id/up_text_field"
@@ -100,19 +99,19 @@
         app:layout_constraintStart_toStartOf="@id/up_text_field"
         android:layout_marginStart="20dp"/>
 
-    <TextView
-        android:id="@+id/text_trivia_small"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Trivia"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_marginStart="6dp"
-        app:layout_constraintBottom_toBottomOf="@id/up_text_field"
-        app:layout_constraintTop_toTopOf="@id/up_text_field"
-        app:layout_constraintStart_toStartOf="@id/up_text_field"
-        app:layout_constraintEnd_toEndOf="@id/up_text_field"/>
+<!--    <TextView-->
+<!--        android:id="@+id/text_trivia_small"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Trivia"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_marginStart="6dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/up_text_field"-->
+<!--        app:layout_constraintTop_toTopOf="@id/up_text_field"-->
+<!--        app:layout_constraintStart_toStartOf="@id/up_text_field"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/up_text_field"/>-->
 
     <ImageView
         android:id="@+id/middle_text_field"
@@ -175,15 +174,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="44dp"/>
 
-    <ImageView
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:src="@drawable/ic_left_arrow"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="@+id/register_text"
-        app:layout_constraintTop_toTopOf="@id/register_text"
-        android:layout_marginStart="14dp"
-        app:tint="#86FFFFFF" />
+<!--    <ImageView-->
+<!--        android:layout_width="20dp"-->
+<!--        android:layout_height="20dp"-->
+<!--        android:src="@drawable/ic_left_arrow"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/register_text"-->
+<!--        app:layout_constraintTop_toTopOf="@id/register_text"-->
+<!--        android:layout_marginStart="14dp"-->
+<!--        app:tint="#86FFFFFF" />-->
 
     <ImageView
         android:layout_width="14dp"
@@ -219,10 +218,54 @@
         app:layout_constraintEnd_toEndOf="@id/ic_bird"
         android:layout_marginBottom="86dp"/>
 
+    <EditText
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/up_text_field"
+        app:layout_constraintEnd_toEndOf="@id/up_text_field"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
 
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/middle_text_field"
+        app:layout_constraintEnd_toEndOf="@id/middle_text_field"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
 
+    <EditText
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/down_text_field"
+        app:layout_constraintEnd_toEndOf="@id/down_text_field"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
 
-
-
+    <ImageButton
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_left_arrow"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:padding="8dp"
+        app:tint="#66FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@id/register_text"
+        app:layout_constraintTop_toTopOf="@id/register_text"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="4dp"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
